@@ -23,7 +23,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build Android Release
-      run: cd android && ./gradlew bundleRelease --no-daemon
+      run: ./gradlew bundleRelease --no-daemon
     - name: Sign App Bundle
       id: sign_app
       uses: r0adkll/sign-android-release@v1
