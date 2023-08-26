@@ -41,6 +41,7 @@ core_version = "1.12.0-rc01"
 devTools_ksp_version = "1.9.0-1.0.11"
 ben_manes_versoin = "0.46.0"
 slidableactivity = "2.1.0"
+org-jetbrains-kotlin-android = "1.9.0"
 
 
 [libraries]
@@ -125,7 +126,10 @@ androidx-palette-ktx = { group = "androidx.palette", name = "palette-ktx", versi
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 androidx-navigation-safeargs-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigation_version" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+androidx-monitor = { group = "androidx.test", name = "monitor", version = "1.6.1" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version = "1.1.5" }
 
 [plugins]
 github-ben-manes = { id = "com.github.ben-manes.versions", version.ref = "ben_manes_versoin" }
 google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "devTools_ksp_version" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }

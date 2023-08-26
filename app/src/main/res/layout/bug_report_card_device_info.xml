@@ -14,7 +14,7 @@
         android:layout_marginBottom="8dp"
         android:orientation="vertical">
 
-        <com.eidogs.appthemehelper.common.views.ATEAccentTextView
+        <com.fullstapp.appthemehelper.common.views.ATEAccentTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start|center_vertical"

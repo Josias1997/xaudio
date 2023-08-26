@@ -9,7 +9,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/playerAlbumCoverFragment"
-        android:name="com.eidogs.xaudio.fragments.player.PlayerAlbumCoverFragment"
+        android:name="com.fullstapp.splitit.fragments.player.PlayerAlbumCoverFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,7 +36,7 @@
 
     <include layout="@layout/status_bar" />
 
-    <com.eidogs.xaudio.views.VerticalTextView
+    <com.fullstapp.splitit.views.VerticalTextView
         android:id="@+id/playerSongTotalTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
         tools:ignore="MissingPrefix"
         tools:text="@tools:sample/date/hhmm" />
 
-    <com.eidogs.xaudio.views.VerticalTextView
+    <com.fullstapp.splitit.views.VerticalTextView
         android:id="@+id/songInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/playbackControlsFragment"
-        android:name="com.eidogs.xaudio.fragments.player.tiny.TinyPlaybackControlsFragment"
+        android:name="com.fullstapp.splitit.fragments.player.tiny.TinyPlaybackControlsFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout="@layout/fragment_tiny_controls_fragment" />
 
-    <com.eidogs.xaudio.views.VerticalTextView
+    <com.fullstapp.splitit.views.VerticalTextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -114,7 +114,7 @@
         tools:ignore="MissingPrefix"
         tools:text="@tools:sample/lorem/random" />
 
-    <com.eidogs.xaudio.views.VerticalTextView
+    <com.fullstapp.splitit.views.VerticalTextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="0dp"

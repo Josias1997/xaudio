@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.eidogs.xaudio"
+    namespace = "com.fullstapp.splitit"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.eidogs.xaudio"
+        applicationId = "com.fullstapp.splitit"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -19,6 +19,15 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        create("release") {
+            storeFile = file(project.property("MYAPP_UPLOAD_STORE_FILE").toString())
+            storePassword = project.property("MYAPP_UPLOAD_KEY_ALIAS").toString()
+            keyAlias = project.property("MYAPP_UPLOAD_STORE_PASSWORD").toString()
+            keyPassword = project.property("MYAPP_UPLOAD_KEY_PASSWORD").toString()
+        }
+    }
+
 
     buildTypes {
         release {
@@ -27,8 +36,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
+
     buildFeatures {
         viewBinding = true
         buildConfig = true
@@ -76,6 +87,9 @@ dependencies {
 
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.monitor)
+    implementation(libs.androidx.junit.ktx)
+    androidTestImplementation("junit:junit:4.12")
     ksp(libs.androidx.room.compiler)
 
     implementation(libs.androidx.lifecycle.viewmodel.ktx)

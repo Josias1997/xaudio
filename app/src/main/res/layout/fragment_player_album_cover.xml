@@ -15,7 +15,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/cover_lyrics"
-        android:name="com.eidogs.xaudio.fragments.player.CoverLyricsFragment"
+        android:name="com.fullstapp.splitit.fragments.player.CoverLyricsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical" />
@@ -28,7 +28,7 @@
         app:fel_size_bottom="100dp"
         app:fel_size_top="100dp">
 
-        <com.eidogs.xaudio.lyrics.CoverLrcView
+        <com.fullstapp.splitit.lyrics.CoverLrcView
             android:id="@+id/lyricsView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

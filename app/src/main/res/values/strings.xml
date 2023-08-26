@@ -563,4 +563,10 @@
     <string name="you_will_be_forwarded_to_the_issue_tracker_website">You will be forwarded to the issue tracker website.</string>
     <string name="your_account_data_is_only_used_for_authentication">Your account data is only used for authentication.</string>
     <string name="could_not_write_tags_to_file">Could not write tags to the music file!</string>
+    <string name="extract_instruments">Extract Instruments</string>
+    <string name="choose_audio_stems">Choose the number of stems you want</string>
+    <string name="save_modified_audio">Save</string>
+    <string name="share_modified_music">Share Modified Music</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -58,7 +58,7 @@
                 tools:text="@tools:sample/lorem[100]" />
         </ScrollView>
 
-        <com.eidogs.xaudio.lyrics.LrcView
+        <com.fullstapp.splitit.lyrics.LrcView
             android:id="@+id/lyricsView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.eidogs.appthemehelper"
+    namespace = "com.fullstapp.appthemehelper"
     compileSdk = 34
 
     defaultConfig {

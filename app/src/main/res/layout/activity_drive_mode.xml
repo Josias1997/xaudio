@@ -18,7 +18,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.eidogs.xaudio.views.StatusBarView
+    <com.fullstapp.splitit.views.StatusBarView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
         android:layout_height="0dp"

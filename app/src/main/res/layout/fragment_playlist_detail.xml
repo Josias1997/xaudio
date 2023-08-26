@@ -24,7 +24,7 @@
             app:titleTextAppearance="@style/ToolbarTextAppearanceNormal" />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.eidogs.xaudio.views.insets.InsetsRecyclerView
+    <com.fullstapp.splitit.views.insets.InsetsRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
