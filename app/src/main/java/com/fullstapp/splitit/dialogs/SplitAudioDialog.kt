@@ -1,5 +1,6 @@
 package com.fullstapp.splitit.dialogs
 
+import android.app.Activity
 import android.app.Dialog
 import android.os.Bundle
 import androidx.core.os.BundleCompat
@@ -7,10 +8,15 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import com.fullstapp.splitit.EXTRA_SONG
 import com.fullstapp.splitit.R
+import com.fullstapp.splitit.STEMS_TYPE
+import com.fullstapp.splitit.activities.MainActivity
 import com.fullstapp.splitit.extensions.colorButtons
+import com.fullstapp.splitit.extensions.findNavController
 import com.fullstapp.splitit.extensions.materialDialog
 import com.fullstapp.splitit.model.Song
 import com.fullstapp.splitit.util.logD
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.search.SearchView.Behavior
 
 class SplitAudioDialog : DialogFragment() {
 
@@ -43,12 +49,25 @@ class SplitAudioDialog : DialogFragment() {
         song: Song?,
         currentlyListening: String
     ) {
-        // Start Activity with Stems Selected
-        logD(which.toString())
+        goToSplitAudio(requireActivity(), which)
+    }
+
+    private fun goToSplitAudio(activity: Activity, type: Int) {
+        if(activity !is MainActivity) return
+        activity.apply {
+            setBottomNavVisibility(false)
+            if(getBottomSheetBehavior().state == BottomSheetBehavior.STATE_EXPANDED) {
+                collapsePanel()
+            }
+
+            findNavController(R.id.fragment_container).navigate(
+                R.id.split_audio_fragment,
+                bundleOf(STEMS_TYPE to type)
+            )
+        }
     }
 
     companion object {
-
         fun create(song: Song): SplitAudioDialog {
             return SplitAudioDialog().apply {
                 arguments = bundleOf(

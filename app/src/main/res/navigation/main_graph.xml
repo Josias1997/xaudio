@@ -134,7 +134,7 @@
         tools:layout="@layout/fragment_split_audio">
         <argument
             android:name="stems_type"
-            app:argType="long"
+            app:argType="int"
             />
     </fragment>
 </navigation>

@@ -60,7 +60,7 @@ class LyricsFragment : AbsMainActivityFragment(R.layout.fragment_lyrics),
     MusicProgressViewUpdateHelper.Callback {
 
     private var _binding: FragmentLyricsBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding!!a
     private lateinit var song: Song
 
     private lateinit var normalLyricsLauncher: ActivityResultLauncher<IntentSenderRequest>
