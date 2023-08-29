@@ -85,3 +85,16 @@ fun provideLyrics(retrofit: Retrofit): LyricsRestService {
         .build()
     return newBuilder.create(LyricsRestService::class.java)
 }
+
+fun splitAudio(retrofit: Retrofit): SplitAudioService {
+    val gson = GsonBuilder()
+        .setLenient()
+        .create()
+
+    val newBuilder = retrofit.newBuilder()
+        .baseUrl("http://10.1.0.229:8000")
+        .addConverterFactory(GsonConverterFactory.create(gson))
+        .build()
+
+    return newBuilder.create(SplitAudioService::class.java)
+}
