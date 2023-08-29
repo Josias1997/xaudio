@@ -5,6 +5,7 @@ buildscript {
         google()
     }
     dependencies {
+        classpath(libs.r8)
         classpath(libs.gradle)
         classpath(libs.kotlin.gradle.plugin)
         classpath(libs.androidx.navigation.safeargs.plugin)
