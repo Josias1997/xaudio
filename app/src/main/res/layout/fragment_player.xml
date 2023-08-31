@@ -38,21 +38,32 @@
         <include layout="@layout/status_bar" />
     </FrameLayout>
 
-
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/playerBannerAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:adUnitId="ca-app-pub-5634305206395688/7222220839">
+    </com.google.android.gms.ads.AdView>
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/playerAlbumCoverFragment"
-        android:name="com.fullstapp.splitit.fragments.player.PlayerAlbumCoverFragment"
+        android:name="com.eidogs.xaudio.fragments.player.PlayerAlbumCoverFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/statusBarContainer" />
+        app:layout_constraintTop_toBottomOf="@id/playerBannerAdView" />
 
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/playbackControlsFragment"
-        android:name="com.fullstapp.splitit.fragments.player.normal.PlayerPlaybackControlsFragment"
+        android:name="com.eidogs.xaudio.fragments.player.normal.PlayerPlaybackControlsFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/playerToolbar"
@@ -60,7 +71,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/playerAlbumCoverFragment"
         tools:layout="@layout/fragment_player_playback_controls" />
-
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/playerToolbar"

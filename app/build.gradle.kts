@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.fullstapp.splitit"
+    namespace = "com.eidogs.xaudio"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.fullstapp.splitit"
+        applicationId = "com.eidogs.xaudio"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -31,7 +31,8 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
+            multiDexEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -89,7 +90,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.monitor)
     implementation(libs.androidx.junit.ktx)
-    androidTestImplementation("junit:junit:4.12")
+    androidTestImplementation("junit:junit:4.13.2")
     ksp(libs.androidx.room.compiler)
 
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
@@ -100,6 +101,7 @@ dependencies {
 
     implementation(libs.google.feature.delivery)
     implementation(libs.google.play.review)
+    implementation(libs.google.play.services.ads)
 
     implementation(libs.android.material)
 

@@ -25,7 +25,7 @@
     android:paddingEnd="12dp"
     tools:ignore="PrivateResource">
 
-    <com.fullstapp.splitit.views.RetroShapeableImageView
+    <com.eidogs.xaudio.views.RetroShapeableImageView
         android:id="@+id/icon"
         android:layout_width="42dp"
         android:layout_height="42dp"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toEndOf="@+id/icon"
         tools:text="@tools:sample/full_names" />
 
-    <com.fullstapp.splitit.views.BaselineGridTextView
+    <com.eidogs.xaudio.views.BaselineGridTextView
         android:id="@+id/text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

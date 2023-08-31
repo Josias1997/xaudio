@@ -34,7 +34,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/playerAlbumCoverFragment"
-        android:name="com.fullstapp.splitit.fragments.player.PlayerAlbumCoverFragment"
+        android:name="com.eidogs.xaudio.fragments.player.PlayerAlbumCoverFragment"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginStart="16dp"
@@ -94,7 +94,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/playbackControlsFragment"
-        android:name="com.fullstapp.splitit.fragments.player.peek.PeekPlayerControlFragment"
+        android:name="com.eidogs.xaudio.fragments.player.peek.PeekPlayerControlFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:transitionGroup="true">
 
-    <com.fullstapp.splitit.views.insets.InsetsRecyclerView
+    <com.eidogs.xaudio.views.insets.InsetsRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +16,7 @@
         android:scrollbars="none"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
-    <com.fullstapp.splitit.views.TopAppBarLayout
+    <com.eidogs.xaudio.views.TopAppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,14 +24,14 @@
         style="?appBarLayoutStyle"
         android:fitsSystemWindows="true">
 
-        <com.fullstapp.splitit.views.BreadCrumbLayout
+        <com.eidogs.xaudio.views.BreadCrumbLayout
             android:id="@+id/breadCrumbs"
             android:layout_width="match_parent"
             android:layout_height="@dimen/tab_height"
             android:paddingStart="60dp"
             android:paddingEnd="8dp"
             app:layout_collapseMode="pin" />
-    </com.fullstapp.splitit.views.TopAppBarLayout>
+    </com.eidogs.xaudio.views.TopAppBarLayout>
 
     <LinearLayout
         android:id="@android:id/empty"

@@ -33,7 +33,17 @@
             android:id="@+id/suggestions"
             layout="@layout/item_suggestions" />
 
-        <com.fullstapp.splitit.views.insets.InsetsRecyclerView
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/homeContentAdview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            android:layout_margin="10dp"
+            ads:adUnitId="ca-app-pub-5634305206395688/7222220839">
+        </com.google.android.gms.ads.AdView>
+
+        <com.eidogs.xaudio.views.insets.InsetsRecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

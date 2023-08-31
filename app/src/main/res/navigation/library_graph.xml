@@ -6,37 +6,37 @@
 
     <fragment
         android:id="@+id/action_album"
-        android:name="com.fullstapp.splitit.fragments.albums.AlbumsFragment"
+        android:name="com.eidogs.xaudio.fragments.albums.AlbumsFragment"
         tools:layout="@layout/fragment_main_recycler" />
 
     <fragment
         android:id="@+id/action_artist"
-        android:name="com.fullstapp.splitit.fragments.artists.ArtistsFragment"
+        android:name="com.eidogs.xaudio.fragments.artists.ArtistsFragment"
         tools:layout="@layout/fragment_main_recycler" />
 
     <fragment
         android:id="@+id/action_song"
-        android:name="com.fullstapp.splitit.fragments.songs.SongsFragment"
+        android:name="com.eidogs.xaudio.fragments.songs.SongsFragment"
         tools:layout="@layout/fragment_main_recycler" />
 
     <fragment
         android:id="@+id/action_genre"
-        android:name="com.fullstapp.splitit.fragments.genres.GenresFragment"
+        android:name="com.eidogs.xaudio.fragments.genres.GenresFragment"
         tools:layout="@layout/fragment_main_recycler" />
 
     <fragment
         android:id="@+id/action_playlist"
-        android:name="com.fullstapp.splitit.fragments.playlists.PlaylistsFragment"
+        android:name="com.eidogs.xaudio.fragments.playlists.PlaylistsFragment"
         tools:layout="@layout/fragment_main_recycler" />
 
     <fragment
         android:id="@+id/action_folder"
-        android:name="com.fullstapp.splitit.fragments.folder.FoldersFragment"
+        android:name="com.eidogs.xaudio.fragments.folder.FoldersFragment"
         tools:layout="@layout/fragment_folder" />
 
     <fragment
         android:id="@+id/action_home"
-        android:name="com.fullstapp.splitit.fragments.home.HomeFragment"
+        android:name="com.eidogs.xaudio.fragments.home.HomeFragment"
         android:label=""
         tools:layout="@layout/fragment_home" />
 

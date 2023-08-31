@@ -16,3 +16,5 @@ local.properties
 ./app/keystore_base64_encoded.txt
 ./app/splitit.keystore
 ./app/build
+*.jks
+*.pepk

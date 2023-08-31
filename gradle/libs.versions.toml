@@ -10,12 +10,11 @@ customactivityoncrash = "2.4.0"
 fadingedgelayout = "1.0.0"
 google_featureDelivery_version = "2.1.0"
 gradle = "7.4.2"
-r8 = "8.1.56"
 dhaval2404_imagepicker_version = "2.1"
 chrisbanes_insetter_version = "0.6.1"
 jaudiotagger = "2.3.15"
 yslibrary_keyboardvisibilityevent_version = "3.0.0-RC3"
-koinAndroid = "3.4.0"
+koinAndroid = "3.4.2"
 kotlinGradlePlugin = "1.8.10"
 
 kotlinxCoroutinesAndroid = "1.7.3"
@@ -28,7 +27,7 @@ materialIntro = "2.0.0"
 mediarouter = "1.4.0"
 nanohttpd = "2.3.1"
 navigation_version = "2.7.1"
-mdc_version = "1.11.0-alpha02"
+mdc_version = "1.9.0"
 glide_version = "4.16.0"
 orgEclipseEgitGithubCore = "2.1.5"
 playServicesCastFramework = "21.3.0"
@@ -37,6 +36,7 @@ appcompat_version = "1.6.1"
 google_play_review_version = "2.0.1"
 room_version = "2.5.2"
 core_version = "1.12.0-rc01"
+play_services_ads_version = "22.3.0"
 
 #plugins
 devTools_ksp_version = "1.9.0-1.0.11"
@@ -66,6 +66,7 @@ androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref =
 google-feature-delivery = { module = "com.google.android.play:feature-delivery", version.ref = "google_featureDelivery_version" }
 google-play-services-cast-framework = { module = "com.google.android.gms:play-services-cast-framework", version.ref = "playServicesCastFramework" }
 google-play-review = { module = "com.google.android.play:review", version.ref = "google_play_review_version" }
+google-play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "play_services_ads_version" }
 
 #glide
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide_version" }
@@ -124,7 +125,6 @@ androidx-palette-ktx = { group = "androidx.palette", name = "palette-ktx", versi
 
 
 #buildscripts dependencies
-r8 = { module = "com.android.tools:r8", version.ref = "r8" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 androidx-navigation-safeargs-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigation_version" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }

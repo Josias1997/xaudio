@@ -28,7 +28,7 @@
             android:textStyle="bold"
             tools:text="@tools:sample/full_names" />
 
-        <com.fullstapp.splitit.views.AccentIcon
+        <com.eidogs.xaudio.views.AccentIcon
             android:id="@+id/arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

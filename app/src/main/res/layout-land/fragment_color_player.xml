@@ -25,17 +25,17 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <com.fullstapp.splitit.views.HeightFitSquareLayout
+            <com.eidogs.xaudio.views.HeightFitSquareLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/playerAlbumCoverFragment"
-                    android:name="com.fullstapp.splitit.fragments.player.PlayerAlbumCoverFragment"
+                    android:name="com.eidogs.xaudio.fragments.player.PlayerAlbumCoverFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:layout="@layout/fragment_album_cover" />
-            </com.fullstapp.splitit.views.HeightFitSquareLayout>
+            </com.eidogs.xaudio.views.HeightFitSquareLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/playbackControlsFragment"
-                    android:name="com.fullstapp.splitit.fragments.player.color.ColorPlaybackControlsFragment"
+                    android:name="com.eidogs.xaudio.fragments.player.color.ColorPlaybackControlsFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"

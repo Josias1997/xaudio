@@ -20,7 +20,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/playerAlbumCoverFragment"
-            android:name="com.fullstapp.splitit.fragments.player.PlayerAlbumCoverFragment"
+            android:name="com.eidogs.xaudio.fragments.player.PlayerAlbumCoverFragment"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constrainedHeight="true"
@@ -53,7 +53,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/cover_lyrics"
-            android:name="com.fullstapp.splitit.fragments.player.CoverLyricsFragment"
+            android:name="com.eidogs.xaudio.fragments.player.CoverLyricsFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:elevation="20dp"

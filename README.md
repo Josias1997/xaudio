@@ -134,9 +134,9 @@ If you have any feature suggestions, please create an issue with detailed inform
 
 ## 🗂️ License
 
-Retro Music Player is released under the GNU General Public License v3.0
+Xaudio Player is released under the GNU General Public License v3.0
 (GPLv3), which can be found [here](LICENSE.md)
 
 
->Please note: Retro Music Player is a local music player app. It
+>Please note: Xaudio Player is a local music player app. It
 >doesn't support music downloading or online music streaming.

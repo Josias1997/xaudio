@@ -49,7 +49,7 @@
         tools:maxLines="@string/grid_size_1"
         tools:text="@tools:sample/lorem" />
 
-    <com.fullstapp.splitit.views.BaselineGridTextView
+    <com.eidogs.xaudio.views.BaselineGridTextView
         android:id="@android:id/summary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="@dimen/list_pref_guideline_begin" />
 
-    <com.fullstapp.appthemehelper.common.views.ATESwitch
+    <com.eidogs.appthemehelper.common.views.ATESwitch
         android:id="@android:id/checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

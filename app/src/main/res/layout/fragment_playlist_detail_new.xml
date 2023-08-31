@@ -102,7 +102,7 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.fullstapp.splitit.views.insets.InsetsRecyclerView
+    <com.eidogs.xaudio.views.insets.InsetsRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
