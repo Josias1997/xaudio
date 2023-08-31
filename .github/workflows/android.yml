@@ -44,7 +44,7 @@ jobs:
       uses: r0adkll/upload-google-play@v1
       with:
         serviceAccountJsonPlainText: ${{ secrets.ANDROID_SERVICE_ACCOUNT }}
-        packageName: com.fullstapp.splitit
+        packageName: com.eidogs.xaudio
         releaseFiles: android/app/build/outputs/bundle/release/app-release.aab
         track: beta
         inAppUpdatePriority: 3
